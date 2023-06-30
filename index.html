@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en" id="home2">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
+
+        <!--<link rel="stylesheet" href="./assets/css/fontawesome/css/all.min.css">-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="./assets/css/styles.css">
+    </head>
+    <body>
+        <nav>
+            <div class="nav-container">
+                <header class="nav-header">
+                    <div class="header">
+                        <div class="logo">
+                            <!--logo text goes here-->
+                        </div>
+                        <button class="switch-btn">
+                            <span></span>
+                            <span></span>
+                            <span class="switch"></span>
+                        </button>
+                    </div>
+                    <div class="menu-icon">
+                        <i class="fas fa-bars"></i>
+                        <i class="fas fa-times" style="display: none"></i>
+                    </div>
+                </header>
+                <div class="links-container">
+                    <ul class="links">
+                        <li><a href="#home" class="link home active">about</a></li>
+                        <li><a href="#project" class="link project">projects</a></li>
+                        <li><a href="#skill" class="link skill">skills</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <main>
+            <!--About section-->
+            <section id="home" class="about-section">
+                <header class="section-header">
+                    <h2 class="title">about me</h2>
+                    <div class="underline"></div>
+                </header>
+                <div class="about">
+                    <div class="about-img">
+                        <img src="./assets/images/mine.png" alt="My Image">
+                    </div>
+                    <div class="about-text">
+                        <p>
+                            Hi, my name is <span>jekiayinfa olumuyiwa</span> and I am a web developer.
+
+                            I started my development journey back in August 2014 as a back-end web developer using Php and Mysql. However, my coding days came to an abrupt end a year and a half later because I ventured into other things. During the aforementioned period, I participated in building of a number of web applications which included: A Medical Application, an Excel Upload Application, an Inventory Management Application among others. 
+                        </p>
+                        <p>
+                            In 2021, I decided to come back by building a Business Directory Application(although it is now offline) and in the end I realised I needed to expand my knowledge to include other languages bordering on front-end and back-end programming. And so this informed my decision, in 2022, to learn Javascript, React JS, Node JS and other languages. I must say I have made trmendous progress so far because I have been able to, with the little knowledge I have gathered so far, build a few applications some of which are included in my portfolio.
+                        </p>
+                        <p>
+                            Some of my biggest strengths include: Teaming up with others to achieve a goal because I believe in team-spirit; I pay very close attention to details; I always put myself in the shoes of the user when I am developing any application; I am a man of my word; I am very honest and expect everyone to be honest with me, especially if I am making a mistake.
+                        </p>
+                        <div class="contact">
+                            <div class="socials">
+                                <h4>contact me</h4>
+                                <a href="https://www.twitter.com/jeksomaniac" target="_blank" title="Twitter">
+                                    <button>
+                                        <i class="fab fa-twitter"></i>
+                                    </button>
+                                </a>
+                                <a href="https://www.linkedin.com/in/olumuyiwa-jekiayinfa-7b22111b2" target="_blank" title="Linkedin">
+                                    <button>
+                                        <i class="fab fa-linkedin"></i>
+                                    </button>
+                                </a>
+                                <a href="https://api.whatsapp.com/send?phone=+2348137989322" target="_blank" title="Whatsapp">
+                                    <button>
+                                        <i class="fab fa-whatsapp"></i>
+                                    </button>
+                                </a>
+                                <a href="https://github.com/olajosh84" target="_blank" title="Github Account">
+                                    <button>
+                                        <i class="fab fa-github"></i>
+                                    </button>
+                                </a>
+                            </div>
+                            <div class="cv">
+                                <h4>my cv</h4>
+                                <a href="./assets/docs/techCV.pdf" download target="_blank" title="My CV">
+                                    <button class="cv-btn">
+                                        <i class="fas fa-download"></i>
+                                        download CV
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+             <!--Projects section-->
+            <section id="project" class="projects-section">
+                <header class="section-header">
+                    <h2 class="title">featured projects</h2>
+                    <div class="underline"></div>
+                    <select id="project-category">
+                        <!--All project categories go here-->
+                    </select>
+                </header>
+                <div class="projects">
+                    <!--all projects go here-->
+                </div>
+            </section>
+
+            <!--skills section-->
+            <section id="skill" class="skills-section">
+                <header class="section-header">
+                    <h2 class="title">skills</h2>
+                    <div class="underline"></div>
+                </header>
+                <div class="skills">
+                    <div class="skill-container">
+                        <div class="skill-info">
+                            <h4 class="skill-title">html</h4>
+                            <h4 class="skill-percent">95%</h4>
+                        </div>
+                        <div class="skill">
+                            <div class="html"></div>
+                        </div>
+                    </div>
+                    <div class="skill-container">
+                        <div class="skill-info">
+                            <h4 class="skill-title">css</h4>
+                            <h4 class="skill-percent">90%</h4>
+                        </div>
+                        <div class="skill">
+                            <div class="css"></div>
+                        </div>
+                    </div>
+                    <div class="skill-container">
+                        <div class="skill-info">
+                            <h4 class="skill-title">javascript</h4>
+                            <h4 class="skill-percent">80%</h4>
+                        </div>
+                        <div class="skill">
+                            <div class="js"></div>
+                        </div>
+                    </div>
+                    <div class="skill-container">
+                        <div class="skill-info">
+                            <h4 class="skill-title">react</h4>
+                            <h4 class="skill-percent">60%</h4>
+                        </div>
+                        <div class="skill">
+                            <div class="react"></div>
+                        </div>
+                    </div>
+                    <div class="skill-container">
+                        <div class="skill-info">
+                            <h4 class="skill-title">php</h4>
+                            <h4 class="skill-percent">85%</h4>
+                        </div>
+                        <div class="skill">
+                            <div class="php"></div>
+                        </div>
+                    </div>
+                    <div class="skill-container">
+                        <div class="skill-info">
+                            <h4 class="skill-title">mysql</h4>
+                            <h4 class="skill-percent">90%</h4>
+                        </div>
+                        <div class="skill">
+                            <div class="mysql"></div>
+                        </div>
+                    </div>
+                    <div class="skill-container">
+                        <div class="skill-info">
+                            <h4 class="skill-title">node</h4>
+                            <h4 class="skill-percent">50%</h4>
+                        </div>
+                        <div class="skill">
+                            <div class="node"></div>
+                        </div>
+                    </div>
+                    <div class="skill-container">
+                        <div class="skill-info">
+                            <h4 class="skill-title">wordpress</h4>
+                            <h4 class="skill-percent">95%</h4>
+                        </div>
+                        <div class="skill">
+                            <div class="wordpress"></div>
+                        </div>
+                    </div>
+                    <div class="skill-container">
+                        <div class="skill-info">
+                            <h4 class="skill-title">bootstrap</h4>
+                            <h4 class="skill-percent">75%</h4>
+                        </div>
+                        <div class="skill">
+                            <div class="bootstrap"></div>
+                        </div>
+                    </div>
+                    <div class="skill-container">
+                        <div class="skill-info">
+                            <h4 class="skill-title">tailwind css</h4>
+                            <h4 class="skill-percent">50%</h4>
+                        </div>
+                        <div class="skill">
+                            <div class="tailwind"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--footer-->
+            <footer>
+                <!--copyright goes here-->
+            </footer>
+            <!--top link-->
+            <div id="top-link">
+                <a href="#home2" title="Back to top"><button><i class="fas fa-arrow-up"></i></button></a>
+            </div>
+            
+        </main>
+        <!--javascript-->
+        
+        <script src="./assets/js/projects.js"></script>
+        <script src="./assets/js/main.js"></script>
+    </body>
+</html>
