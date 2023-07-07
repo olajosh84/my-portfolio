@@ -36,7 +36,7 @@ const projects = [
         image:'chat.png',
         category: 'MERN',
         title: 'chat app',
-        github: 'https://github.com/olajosh84/chat-app-with-MERN.git',
+        github: 'https://github.com/olajosh84/chat-client.git',
         view: '#',
     },
     /*{
