@@ -6,6 +6,7 @@ const projects = [
         title: 'short quiz',
         github: 'https://github.com/olajosh84/quiz.git',
         view: 'https://olajeksquiz.netlify.app',
+        stack: "html + css + javascript",
     },
     {
         id: 2,
@@ -14,6 +15,7 @@ const projects = [
         title: 'goals tracker',
         github: 'https://github.com/olajosh84/goals-tracker.git',
         view: 'https://olajeksgoalstracker.netlify.app',
+        stack: "html + css + javascript",
     },
     {
         id: 3,
@@ -22,6 +24,7 @@ const projects = [
         title: 'demo responsive website',
         github: 'https://github.com/olajosh84/demo-website.git',
         view: 'https://olajeksdemowebsite.netlify.app',
+        stack: "html + css + javascript",
     },
     {
         id: 4,
@@ -30,14 +33,16 @@ const projects = [
         title: 'admin panel',
         github: 'https://github.com/olajosh84/react-admin-panel.git',
         view: 'https://olajeksadminpanel.netlify.app',
+        stack: "html + css + javascript + react",
     },
     {
         id: 5,
         image:'chat.png',
         category: 'MERN',
         title: 'chat app',
-        github: 'https://github.com/olajosh84/chat-client.git',
-        view: '#',
+        github: 'https://github.com/olajosh84/chat-app-with-MERN.git',
+        view: 'https://olajekschat.onrender.com',
+        stack: "html + css + bootstrap + javascript + mern",
     },
     /*{
         id: 5,
@@ -51,7 +56,7 @@ const projects = [
 ];
 
 const projectsContainer = document.querySelector('.projects');
-const projectCategory = document.querySelector("#project-category");
+/*const projectCategory = document.querySelector("#project-category");
 const projectCateogories = ['all', ...new Set(projects.map(project => project.category))];
 for(let category of projectCateogories){
    projectCategory.innerHTML += `<option value=${category}>${category}</option>`
@@ -68,14 +73,14 @@ projectCategory.addEventListener("change", function(){
     
     showProjects(filteredProjects);
 
-})
+})*/
 
 
 function showProjects(allProjects){
     const featuredProjects = allProjects.map((project) => {
-    const {id, image, category, title, github, view} = project;
+    const {id, image, category, title, github, view, stack} = project;
     return `
-        <div class="project">
+        <div class="featured-project animate">
             <img src="./assets/images/${image}" alt="">
             <div class="project-info">
                 <h2>${title}</h2>
@@ -89,6 +94,7 @@ function showProjects(allProjects){
                         github
                     </button></a>
                 </div>
+                <div class="tech-stack">${stack}</div>
             </div>
         </div>
     `

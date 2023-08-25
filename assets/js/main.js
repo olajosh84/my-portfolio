@@ -32,8 +32,8 @@ switchBtn.addEventListener("click", (e) => {
 })
 
 //changing the logo color
-const logo = document.querySelector('.logo');
-logo.innerHTML = "<a href='#''><span class='one-half-logo'>Olajeks</span> <!--<span class='other-half-logo'>Coding</span>--></a>";
+/*const logo = document.querySelector('.logo');
+logo.innerHTML = "<a href='#''><span class='one-half-logo'>Olajeks</span> <!--<span class='other-half-logo'>Coding</span>--></a>";*/
 
 //toggle links
 const menuIcon = document.querySelector(".menu-icon");
