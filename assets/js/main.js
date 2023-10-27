@@ -14,6 +14,18 @@ navLinks.forEach((link) => {
     })
 })
 
+//check color mode document onLoad 
+window.addEventListener("DOMContentLoaded", () => {
+    let colorMode = localStorage.getItem('darkMode');
+    if(colorMode){
+        switchBtn.classList.add('slide');
+        document.body.classList.add('dark-mode');
+    } else {
+        switchBtn.classList.remove('slide');
+        document.body.classList.remove('dark-mode');
+    }
+})
+
 //toplink
 const topLink = document.getElementById("top-link");
 window.addEventListener("scroll", function(){
@@ -28,7 +40,8 @@ window.addEventListener("scroll", function(){
 switchBtn.addEventListener("click", (e) => {
     e.preventDefault();
     e.currentTarget.classList.toggle('slide');
-    document.body.classList.toggle('dark-mode')
+    document.body.classList.toggle('dark-mode');
+    e.currentTarget.classList.contains('slide') ? localStorage.setItem('darkMode', true) : localStorage.removeItem('darkMode');
 })
 
 //changing the logo color

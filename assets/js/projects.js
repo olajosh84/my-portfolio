@@ -42,16 +42,17 @@ const projects = [
         title: 'chat app',
         github: 'https://github.com/olajosh84/chat-app-with-MERN.git',
         view: 'https://olajekschat.onrender.com',
-        stack: "html + css + bootstrap + javascript + mern",
+        stack: "html + css + bootstrap + mern",
     },
-    /*{
-        id: 5,
-        image:'email4.jpeg',
-        category: 'react',
-        title: 'email list',
-        github: 'https://github.com/olajosh84/email-list.git',
-        view: 'https://olajeksemaillist.netlify.app',
-    },*/
+    {
+        id: 6,
+        image:'auth.jpeg',
+        category: 'MERN',
+        title: 'user authentication',
+        github: 'https://github.com/olajosh84/website-with-Tailwindcss-and-MERN.git',
+        view: 'https://olajekswebauth.onrender.com',
+        stack: "html + css + tailwind + redux + mern"
+    },
     
 ];
 
